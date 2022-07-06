@@ -1,0 +1,69 @@
+@use "../abstracts" as *;
+.videos-grid {
+  height: 91%;
+  overflow-y: scroll;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 35px 20px;
+  width: 96%;
+  margin-inline: auto;
+  padding-top: 1.6em;
+  scrollbar-width: none;
+}
+
+.video {
+  width: 100%;
+  max-width: 360px;
+  margin-inline: auto;
+  &__main-box {
+  }
+
+  &__thumbnail-box {
+    position: relative;
+    height: 100%;
+  }
+
+  &__thumbnail {
+    width: 100%;
+    height: 100%;
+    z-index: 8;
+    position: absolute;
+    &:hover {
+      opacity: 0;
+    }
+  }
+  &__video {
+    width: 100%;
+    height: 50%;
+    position: relative;
+    z-index: 3;
+  }
+
+  &__duration {
+    position: absolute;
+    bottom: 5px;
+    right: 5px;
+    padding: 0.07em 0.3em;
+  }
+  &__info {
+    @include flex(space-between, flex-start, 12px);
+    margin-top: 0.8em;
+  }
+
+  &__channel-img {
+    width: 37px;
+    height: 37px;
+  }
+
+  &__btns {
+    @include flex(center, center, 10px);
+    flex-wrap: wrap;
+    margin-top: 1.5em;
+  }
+  &__btn {
+    background-color: var(--border-primary);
+    @include flex(center, center, 5px);
+    padding: 0.5em;
+    width: 100%;
+  }
+}

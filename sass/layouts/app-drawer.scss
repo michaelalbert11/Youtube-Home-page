@@ -1,0 +1,63 @@
+@use "../abstracts" as *;
+aside {
+  height: 100%;
+}
+
+
+
+.app-drawer-wrapper {
+  height: 100%;
+  @include breakpointMax(break-2) {
+    display: none;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    top: 0;
+    position: absolute;
+    z-index: 500;
+  }
+}
+.app-drawer {
+  overflow-y: auto;
+  background-color: #fff;
+  height: 100%;
+
+  &__header {
+    @include flex(unset, center, 15px);
+    padding: 1.2em 20px 0 0.8em;
+    padding-left: 20px;
+    @include breakpointMin(break-2) {
+      display: none;
+    }
+  }
+
+  .yt-main-logo {
+    width: 90px;
+  }
+
+  .home-logo-link {
+    @include flex(unset, center);
+  }
+
+  &__navigation-item-box {
+    @include flex(unset, center, 20px);
+  }
+  &__navigation-item-channel-box {
+    @include flex(unset, center, 8px);
+  }
+
+}
+
+.app-drawer{
+
+  @include breakpointMax(desktop){
+    &-active{
+    display: block;
+  }
+
+  &-not-active{
+    display: none;
+  }
+  }
+}
+
+

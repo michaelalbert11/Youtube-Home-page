@@ -1,0 +1,5 @@
+@use "../abstracts" as *;
+main {
+  @include flex(unset, unset, 0);
+  height: 90vh;
+}

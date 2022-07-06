@@ -1,0 +1,133 @@
+@use "../abstracts" as *;
+.header {
+  background-color: var(--bg-secondary-light);
+  &__left {
+  }
+  .nav-toggler {
+    width: 24px;
+    height: 24px;
+  }
+  &__yt-logo {
+    width: 90px;
+  }
+
+  &__yt-logo-letter {
+    fill: hsl(0, 0%, 14%);
+  }
+
+  .home-logo-link {
+    position: relative;
+  }
+
+  .location-label {
+    font-size: 0.65rem;
+    font-weight: 300;
+  }
+
+  &__center {
+    & .search-section {
+      border: 1px solid var(--border-secondary-color);
+    }
+
+    & .search-box {
+      &__input {
+        height: 40px;
+        border: none;
+        width: 100%;
+        padding-left: 0.5em;
+      }
+      .focused-input {
+        padding-left: 2em;
+      }
+
+      &__icon {
+        width: 25px;
+        height: 25px;
+
+        &--s,
+        &--close {
+          width: 21px;
+          height: 21px;
+        }
+
+        &--arrow {
+          @include breakpointMin(break-1) {
+            display: none;
+          }
+        }
+      }
+    }
+    .search-suggestion {
+      background-color: #fff;
+      border: 1px solid var(--border-primary);
+      box-shadow: 0 5px 5px rgb(0, 0, 0, 0.2);
+      padding: 0.5em;
+      &__list {
+        margin-top: 0.5em;
+      }
+
+      &__link {
+        margin-bottom: 0.5em;
+        position: relative;
+        &-text {
+          font-weight: 500;
+        }
+        &-right {
+          position: absolute;
+          right: 0;
+          background-color: #fff;
+        }
+      }
+
+      &__remove-btn {
+        color: var(--channel-active);
+        font-weight: normal;
+        font-size: 13px;
+
+        &:hover {
+          text-decoration: underline;
+        }
+      }
+    }
+    .search-btn-1 {
+      height: 40px;
+      background-color: var(--search-icon-bg);
+      border-left: 1px solid var(--border-secondary-color);
+      padding: 0.5em 1.1em 0 1.1em;
+    }
+    .mic-btn-1 {
+      background-color: var(--search-icon-bg);
+      padding: 0.5em;
+      border-radius: 30px;
+    }
+  }
+
+  &__right {
+    & .search-box__icon {
+      width: 18px;
+      height: 18px;
+    }
+    &-btn {
+      height: 24px;
+    }
+    &-profile-img {
+      width: 32px;
+      height: 32px;
+      border-radius: 30px;
+    }
+
+    .search-btn-2,
+    .mic-btn-2 {
+      @include breakpointMin(break-1) {
+        display: none;
+      }
+    }
+  }
+
+  .icon-hide {
+    display: none;
+  }
+  .profile-img {
+    // width: 50px;
+  }
+}

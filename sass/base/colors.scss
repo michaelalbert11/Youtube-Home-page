@@ -1,0 +1,26 @@
+:root {
+  // light-mode
+  --text-primary-light: hsl(0, 0%, 1%);
+  --text-secondary-light: hsl(0, 0%, 38%);
+  --bg-primary-light: hsl(0, 0%, 98%);
+  --bg-secondary-light: hsla(0, 0%, 100%, 0.9);
+  --accent-light-color: hsl(0, 0%, 90%);
+  --tag-bg-primary-light: hsl(0, 0%, 94%);
+  --tag-bg-secondary-light: hsl(0, 0%, 97%);
+
+  // black-mode
+  --text-primary-dark: hsl(0, 0%, 100%);
+  --text-secondary-dark: hsl(0, 0%, 67%);
+  --bg-primary-dark: hsl(0, 0%, 9%);
+  --bg-secondary-dark: hsl(0, 0%, 13%);
+  --accent-color-light: hsl(0, 0%, 28%);
+  // --tag-bg-primary-light: hsl(0, 0%, 22%);
+  // --tag-bg-secondary-light: hsl(0, 0%, 89%);
+
+  --search-box-dark: hsl(0, 0%, 7%);
+  --search-icon-bg: hsl(0, 0%, 97%);
+  --channel-active: hsl(214, 94%, 43%);
+  --youtube-red: hsl(0, 100%, 50%);
+  --border-primary: rgba(0, 0, 0, 0.1);
+  --border-secondary-color: hsl(0, 0%, 80%);
+}

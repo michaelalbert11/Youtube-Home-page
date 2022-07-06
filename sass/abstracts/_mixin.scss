@@ -1,0 +1,23 @@
+@use "breakpoints" as *;
+@mixin breakpointMin($screen) {
+  @media (min-width: map-get($screens,$screen)) {
+    @content;
+  }
+}
+@mixin breakpointMax($screen) {
+  @media (max-width: map-get($screens,$screen)) {
+    @content;
+  }
+}
+
+@mixin flex($justify: unset, $align: unset, $gap: 0em) {
+  display: flex;
+  justify-content: $justify;
+  align-items: $align;
+  gap: $gap;
+}
+
+@mixin grid-center {
+  display: grid;
+  place-items: center;
+}

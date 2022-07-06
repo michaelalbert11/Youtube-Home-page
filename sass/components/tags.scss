@@ -1,0 +1,30 @@
+@use "../abstracts" as *;
+.tags {
+  border-top: 1px solid var(--border-primary);
+  border-bottom: 1px solid var(--border-primary);
+  background-color: #fff;
+  .tag {
+    text-transform: capitalize;
+    background-color: var(--tag-bg-primary-light);
+    border: 1px solid var(--border-primary);
+    padding: 0.3em 1em;
+    white-space: nowrap;
+    border-radius: 20px;
+    margin-right: 1em;
+    font-size: 15px;
+  }
+
+  .tag-active {
+    background-color: var(--text-primary-light);
+    color: #fff;
+  }
+  .arrow-left {
+    background-color: #fff;
+    margin-left: 0.5em;
+  }
+
+  .arrow-right {
+    margin-right: 0em;
+    background-color: #fff;
+  }
+}
